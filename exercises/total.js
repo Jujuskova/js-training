@@ -7,6 +7,15 @@
  */
 
 
+ function total(tableau) {
+ 	 let toto = 0;
+ 	for (let i = 0; i < tableau.length; i++) {
+    	toto += tableau[i];
+    };
+    return toto;
+ };
+
+
 //* Begin of tests
 const assert = require('assert')
 

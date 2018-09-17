@@ -10,6 +10,24 @@
 
 // Your code :
 
+function multiply(n1, n2) {
+	if (n2 < 0 && n1 > 0) {
+		n2 = -n2;
+		n1 = -n1;
+	};
+	if (n2 < 0 && n1 < 0) {
+		n2 = -n2;
+		n1 = -n1;
+	};
+	console.log(n2);
+	let toto = 0;
+	while (n2 > 0) {
+		toto += n1;
+		n2 -= 1;
+	};
+	return toto;
+};
+
 //* Begin of tests
 const assert = require('assert')
 
