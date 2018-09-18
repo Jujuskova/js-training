@@ -8,6 +8,15 @@
  */
 
 // Your code :
+function getFirst(array) {
+	if (array[0] === undefined && array.length > 0) {
+		return array.slice(0,1);
+	} else if (array[0] === undefined) {
+		return undefined;
+	} else {
+		return array[0];
+	};
+};
 
 //* Begin of tests
 const assert = require('assert')

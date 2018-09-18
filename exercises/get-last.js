@@ -8,7 +8,15 @@
  */
 
 // Your code :
-
+function getLast(array) {
+	if (array[0] === undefined && array.length > 0) {
+		return array.slice(-1);
+	} else if (array[0] === undefined) {
+		return undefined;
+	} else {
+		return array[array.length -1];
+	};
+};
 //* Begin of tests
 const assert = require('assert')
 
