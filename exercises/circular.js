@@ -10,7 +10,9 @@
 // Your code :
 
 	let circular = {
-		circular : this
+	  get circular() { 
+	    return this;
+	  }
 	};
 
 //* Begin of tests
