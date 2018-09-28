@@ -6,6 +6,15 @@
  *
  */
 
+function sentence(array) {
+	let result = array[0] 
+	for(let i = 1; i < array.length; i++) {
+		result = result + " " + array[i] ;
+	}
+	return result;
+}
+
+
 
 //* Begin of tests
 const assert = require('assert')

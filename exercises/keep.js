@@ -13,8 +13,25 @@
  */
 
 
+function keepFirst(string) {
+	let newStr = string.substr(0, 2);
+	return newStr;
+}
+
+function keepLast(string) {
+	let newStr1 = string.slice(-2);
+	return newStr1;
+}
+
+function keepFirstLast(string) {
+	let newStr2 = string.substr(2, 2);
+	return newStr2;
+}
+
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.deepStrictEqual(keepFirst('Salut Frere'), 'Sa')
+assert.deepStrictEqual(keepLast('Salut Frere'), 're')
+assert.deepStrictEqual(keepFirstLast('Salut Frere'), 'lu')
 // End of tests */

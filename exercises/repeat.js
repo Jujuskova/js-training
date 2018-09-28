@@ -8,6 +8,19 @@
  *
  */
 
+function repeat(str, numb) {
+	if (numb === 0) {
+		return ""
+	}
+	let string = str;
+
+	for (let i = 0; i < numb - 1; i++) {
+		string += str
+	}
+	return string
+}
+
+
 //* Begin of tests
 const assert = require('assert')
 
